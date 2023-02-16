@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro Produto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/cadastroProduto.css" />
+    <script
+    src="https://kit.fontawesome.com/b139898041.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="icon" type="image/x-icon" href="../../home/res/img/PUC.png">  </head>
+  <body onload="verificarLogado()">
+        <header class="container-fluid headerContainer">
+          <div class="d-flex p-2 flex-row align-items-center header">
+            <div class="p-2 logo">
+              <a href="../../home/view/htmls/home.html"
+                ><img
+                  src="../../../communs/res/img/PUC2.png"
+                  alt="LOGO"
+              /></a>
+            </div>
+            <div class="p-2 segundaDiv">
+              <nav class="navbar navbar-expand-lg navbar-light menu">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0 lista">
+                    <li class="nav-item loginDiv">
+                      <a
+                        href="../../../cadastro/view/htmls/cadastro.html"
+                        id="cadastre-se"
+                        class="login"
+                        ><span> Cadastre-se</span></a
+                      >
+                      <a
+                        class="logado"
+                        href="../../../perfil/view/htmls/perfil.html"
+                        id="nome_user"
+                        ><span></span
+                      ></a>
+                    </li>
+                    <li class="nav-item favDiv">
+                      <a
+                        href="../../../favoritos/view/html/favorito.html"
+                        class="favoritos"
+                        ><span><i class="fa-solid fa-star"></i> Favoritos</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+    </header>
+
+
+<div class="container">
+  <h2>Cadastrar Produto</h2>
+  <form id="formDescricao" method="post" >
+    <div class="form-group">
+      <label for="descricao">Nome:</label>
+      <input type="text" class="form-control" id="nome" placeholder="Digite o nome do seu produto." name="nome">
+    </div><br>
+
+    <div class="form-group">
+      <label for="descricao">Descrição:</label>
+      <textarea name="descricao" form="formDescricao" class="textarea" id="descricao" maxlength="1200" placeholder="Descreva o seu produto em até 1200 caracteres."></textarea>
+    </div><br>
+  <div class="form-group">
+      <label for="nome">Preço Desejado:</label>
+      <input type="number" class="form-control" id="preco" placeholder="Qual o preço do seu produto?" name="preco">
+    </div><br>
+  <div class="form-group">
+      <label for="nome">Categorias:</label>
+      <div class="radio">
+  <label><input type="radio" value="Roupas" id="c1" name="optCheck" checked>Roupas</label>
+</div>
+<div class="radio">
+  <label><input type="radio" value="Eletronicos" id="c2" name="optCheck">Eletronicos</label>
+</div>
+    <div class="radio">
+  <label><input type="radio" value="Acessorios" id="c3" name="optCheck">Acessorios</label>
+</div>
+    <div class="radio">
+  <label><input type="radio" value="Livros" id="c4" name="optCheck">Livros</label>
+</div>
+    <div class="radio">
+  <label><input type="radio" value="Esportes" id="c5" name="optCheck">Esportes</label>
+</div>
+<div class="radio">
+    <label><input type="radio" value="Serviços" id="c6" name="optCheck">Serviços</label>
+  </div>
+    <div class="radio">
+  <label><input type="radio" value="Outros" id="c7" name="optCheck">Outros</label>
+</div>
+    </div><br>
+    <div class="form-group">
+  <label for="campus">Qual unidade você deseja entregar o produto?:</label>
+  <select class="form-control" id="campui" onchange="atualizouUnidade()">
+    <option value="Coração Eucaristico" selected>Coração Eucaristico </option>
+    <option value="São Gabriel" >São Gabriel</option>
+    <option value="Praça da Liberdade" >Praça da Liberdade</option>
+    <option value="Barreiro" >Barreiro</option>
+    <option value="Outro" >Outro</option>
+  </select>
+</div><br>
+    <div class="form-group">
+      <label>Estado do produto:</label>
+      <label class="radio-inline"><input type="radio" name="optradio" id="e1" value="Novo" checked>Novo</label>
+      <label class="radio-inline"><input type="radio" name="optradio" id="e2" value="Semi novo">Semi novo</label>
+      <label class="radio-inline"><input type="radio" name="optradio" id="e3" value="Usado">Usado</label>
+    </div><br>
+   
+     <div class="form-group">
+      <label for="marca">Marca:</label>
+      <input type="marca" class="form-control" id="marca" placeholder="O produto possui marca?" name="marca">
+    </div><br>
+   
+    
+   
+   <div class="form-group">
+  <label for="sel1">Quantidade do produto:</label>
+  <select class="form-control" id="sel1" onchange="atualizouQuantidade()">
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+   <option value="5">5</option>
+  </select>
+</div>
+<div class="form-group pt-4">
+    <label for="files">Adicionar foto:</label>  
+    <input type="text" class="form-control" name="files" id="foto" placeholder="Digite o nome simplificado do seu produto para buscarmos uma imagem adequada para o seu produto. Ex:Computador, blusa " />
+</div><br>
+
+<button type="button" class="btn btn-success" id="btnAdd">Cadastrar Produto</button>
+
+ 
+  
+
+</div><br>
+
+<script src="../back/cadastroProduto.js"></script>
+<script src="../back/cadastroProduto.js"></script>
+
+    <script>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    </script>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styleinfo.css" />
+    <script
+      src="https://kit.fontawesome.com/b139898041.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../../../features/home/res/img/PUC.png"/>
+    <title>Produto</title>
+  </head>
+  <body onload="iniciarTela();">
+    <header class="container-fluid headerContainer">
+      <div class="d-flex p-2 flex-row align-items-center header">
+        <div class="p-2 logo">
+          <a href="../../../home/view/htmls/home.html"
+            ><img src="../../../../features/home/res/img/Mercadão Puc Minas.png" alt="LOGO" />
+          </a>
+        </div>
+        <div class="p-2 segundaDiv">
+          <nav class="navbar navbar-expand-lg navbar-light menu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- <form class="d-flex formSearch">
+                <input
+                  class="buttonSearch form-control me-2 searchBox"
+                  id="searchInput"
+                  type="search"
+                  placeholder="O que você procura?"
+                  aria-label="Search"
+                />
+                <a href="#"
+                  ><button
+                    class="btn btn-outline-dark btnSearch"
+                    id="btnSearch"
+                    type="button"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i></button
+                ></a>
+              </form> -->
+              <ul class="navbar-nav mb-2 mb-lg-0 lista">
+                <li class="nav-item loginDiv">
+                  <a
+                    href="../../../cadastro/view/htmls/cadastro.html"
+                    id="cadastre-se"
+                    class="login"
+                    ><span> Cadastre-se</span></a
+                  >
+                  <a
+                    class="logado"
+                    href="../../../perfil/view/htmls/perfil.html"
+                    id="nome_user"
+                    ><span></span
+                  ></a>
+                </li>
+                <li class="nav-item favDiv">
+                  <a
+                    href="../../../favoritos/view/html/favorito.html"
+                    class="favoritos"
+                    ><span><i class="fa-solid fa-star"></i> Favoritos</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <nav class="col-12" id="nav">
+          <div class="menuMobile">
+            <button
+              aria-label="Abrir menu"
+              id="btnMobile"
+              aria-expanded="false"
+              aria-controls="menu"
+            >
+              Categorias
+              <span id="hamburger"></span>
+            </button>
+          </div>
+          <ul class="nav menu justify-content-center" id="menuCategoria">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home/view/htmls/home.html">Todos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home/view/htmls/home.html">Roupas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home/view/htmls/home.html">Eletrônicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home/view/htmls/home.html">Acessórios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home/view/htmls/home.html">Livros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home/view/htmls/home.html">Esportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../home/view/htmls/home.html">Aulas particulares</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btnAnunciar"
+                href="../../../cadastroProduto/htmls/cadastroProduto.html"
+                ><button type="button" class="btn btn-outline-danger btn-lg">
+                  <i class="fa-solid fa-camera-retro"></i> Anunciar
+                </button></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div> -->
+    </header>
+    <main class="container">
+      <div class="row">
+        <h1 id="nomeProduto" class="nome col-12 text-center">
+          NOME DO PRODUTO
+        </h1>
+      </div>
+      <div class="row">
+        <img class="imgProduct" src="#" alt="" id="fotoProduto" />
+        <div class="col-lg-3 textProduto">
+          <h2>Preço:</h2>
+          <h3 id="precoProduto" class="info">67R$</h3>
+          <h2>Unidade:</h2>
+          <h3 id="entregaProduto" class="info">São Gabriel</h3>
+          <h2>Estado de uso:</h2>
+          <h3 id="estadoProduto" class="info">Novo</h3>
+          <h2>Categoria:</h2>
+          <h3 id="categoriaProduto" class="info">Roupas</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 favoritos text-center" id="favoritos">
+          <span class="adicionar" id="addFav">Adicionar aos Favoritos</span>
+          <i id="heartFav" class="fa-regular fa-heart heart"></i>
+        </div>
+        <div class="row">
+          <div class="col-12 descricao">
+            <h3 class="text-center">Descrição</h3>
+            <p id="descricao">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Adipisci, voluptate modi voluptatibus harum at, aliquam minus
+              necessitatibus libero accusantium dicta deleniti nemo quae rerum.
+              Rem dolorem doloribus inventore nisi eos. Amet mollitia odit
+              repudiandae aliquid natus? Consequuntur laborum beatae inventore?
+              Corporis error, reprehenderit quo optio nostrum dignissimos, saepe
+              impedit modi maiores aliquam nam nihil, eaque laborum fuga ea.
+              Fugit, sunt?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center"><h2>Dados do vendedor</h2></div>
+        <ul class="list-group list-group-flush col-12">
+          <li class="list-group-item" id="nomeUsuario">NOME</li>
+          <li class="list-group-item" id="emailUsuario">Email</li>
+          <li class="list-group-item" id="pixUsuario">PIX</li>
+          <li class="list-group-item" id="unidadeUsuario">
+            Unidade que estuda
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-12 chat text-center">
+          <a target="_blank" class="zapzap" href="#" id="mandaZap">
+            <span>Chat </span><i class="fa-regular fa-handshake"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid footer">
+      <div class="row">
+        <h2 class="col text-center">
+          PUC MINAS TODOS OS DIREITOS RESERVADOS - TERMOS DE USO
+        </h2>
+      </div>
+    </footer>
+    <script src="../infoProduto.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

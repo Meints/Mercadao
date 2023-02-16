@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #f7f7f7f8;
+  overflow-x: hidden;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 130px);
+}
+.headerContainer {
+  margin: 10px;
+}
+.mainContainer {
+  margin: 10px;
+}
+.header {
+  justify-content: space-between;
+  background-color: #dc3545;
+}
+
+.segundaDiv {
+  flex-grow: 2;
+}
+.btnSearch {
+  margin: -5px;
+}
+.logo img {
+  width: 100%;
+  max-width: 270px;
+}
+.formSearch {
+  width: 100%;
+}
+.searchBox {
+  width: 100%;
+}
+.login {
+  text-decoration: none;
+  color: #000 !important;
+  font-size: 1rem !important;
+}
+.loginDiv:hover {
+  color: #dc3545;
+}
+.logado {
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
+  font-size: 1rem !important;
+}
+.logado:hover {
+  color: #dc3545;
+}
+.lista {
+  display: flex;
+  padding: 40px;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.favoritos {
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
+  font-size: 1rem !important;
+}
+#btnMobile {
+  display: none;
+}
+
+.menu {
+  min-width: 100%;
+}
+.menu a {
+  color: #dc3545;
+  font-size: 1.6em;
+}
+.menu a:hover {
+  color: #971010;
+}
+.imgProduto {
+  max-width: 100%;
+  max-height: 400px;
+}
+.logo {
+  width: 80%;
+}
+.title {
+  text-align: center;
+  margin: 4rem 0;
+}
+.btnRedirect {
+  margin: 4rem 0;
+}
+.mainContainer {
+  margin: 0 3rem;
+}
+.divProduto {
+  margin-bottom: 1rem;
+  background-color: #e6e6e6;
+}
+.btnRedirect a {
+  text-decoration: none;
+  color: #fff;
+  padding: 2rem 5rem;
+  background-color: #1e176b;
+  border-radius: 10px;
+  transition: all 0.6s ease;
+}
+.btnRedirect a:hover {
+  color: #42ed61;
+  background-color: #0e82e8;
+}
+.footerCopyright {
+  text-align: center;
+  background-color: #120e27f8;
+  color: white;
+  padding: 10px 0px;
+}

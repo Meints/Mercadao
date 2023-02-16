@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meu Perfil</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/perfil.css" />
+    <script
+      src="https://kit.fontawesome.com/b139898041.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../../../features/home/res/img/PUC.png"/>
+  </head>
+  <body>
+    <header class="container-fluid headerContainer">
+      <div class="d-flex p-2 flex-row align-items-center header">
+        <div class="p-2 logo">
+          <a href="../../../home/view/htmls/home.html"
+            ><img
+              src="../../../../communs/res/img/PUC2.png"
+              alt="LOGO"
+            />
+          </a>
+        </div>
+        <div class="p-2 segundaDiv">
+          <nav class="navbar navbar-expand-lg navbar-light menu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- <form class="d-flex formSearch">
+                <input
+                  class="buttonSearch form-control me-2 searchBox"
+                  id="searchInput"
+                  type="search"
+                  placeholder="O que você procura?"
+                  aria-label="Search"
+                />
+                <a href="#"
+                  ><button
+                    class="btn btn-outline-dark btnSearch"
+                    id="btnSearch"
+                    type="button"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i></button
+                ></a>
+              </form> -->
+              <ul class="navbar-nav mb-2 mb-lg-0 lista">
+                <li class="nav-item loginDiv">
+                  <a
+                    href="../../../cadastro/view/htmls/cadastro.html"
+                    id="cadastre-se"
+                    class="login"
+                    ><span> Cadastre-se</span></a
+                  >
+                  <a
+                    class="logado"
+                    href="../../../perfil/view/htmls/perfil.html"
+                    id="nome_user"
+                    ><span></span
+                  ></a>
+                </li>
+                <li class="nav-item favDiv">
+                  <a
+                    href="../../../favoritos/view/html/favorito.html"
+                    class="favoritos"
+                    ><span><i class="fa-solid fa-star"></i> Favoritos</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main-body">
+          <div class="row gutters-sm">
+            <div class="col-lg-12 col-md-12 mb-3">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="d-flex flex-column align-items-center text-center"
+                  >
+                    <img
+                      src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                      alt="Admin"
+                      class="rounded-circle"
+                      width="150"
+                    />
+                    <div class="mt-3">
+                      <h4 id="nomePerfil">Nome</h4>
+                      <p>
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          id="btnDeslogar"
+                        >
+                          Deslogar
+                        </button>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <h6 class="mb-0">Nome completo</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        <input
+                          id="nome"
+                          type="text"
+                          class="form-control"
+                          value=""
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <h6 class="mb-0">Senha</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        <input
+                          id="senha"
+                          type="text"
+                          class="form-control"
+                          value=""
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <h6 class="mb-0">Email</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        <input
+                          id="email"
+                          type="text"
+                          class="form-control"
+                          value=""
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <h6 class="mb-0">Número</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        <input
+                          id="numero"
+                          type="text"
+                          class="form-control"
+                          value=""
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <h6 class="mb-0">Pix</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        <input
+                          id="pix"
+                          type="text"
+                          class="form-control"
+                          value=""
+                          autocomplete="off"
+                        />
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <h6 class="mb-0">Descrição</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        <textarea
+                          id="descricao"
+                          type="text"
+                          class="form-control"
+                        >
+Descrição</textarea
+                        >
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <h6 class="mb-0">Unidade</h6>
+                      </div>
+                      <div class="col-sm-9 text-secondary">
+                        <select class="form-control" id="sel1">
+                          <option value="1">Coração Eucaristico</option>
+                          <option value="2">São Gabriel</option>
+                          <option value="3">Praça da Liberdade</option>
+                          <option value="4">Barreiro</option>
+                          <option value="5">Outro</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-3"></div>
+                      <div class="col-sm-9 text-secondary">
+                        <input
+                          id="btnChange"
+                          type="button"
+                          class="btn btn-primary px-4"
+                          value="Save Changes"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <br />
+    <footer class="container-fluid">
+      <div class="row text-center">
+        <h2 class="col">
+          COPYRIGHT PUC MINAS - ICEI SISTEMAS DE INFORMAÇÃO TODOS OS DIREITOS
+          RESERVADOS.
+        </h2>
+      </div>
+    </footer>
+    <script type="text/javascript" src="../../back/perfil.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
